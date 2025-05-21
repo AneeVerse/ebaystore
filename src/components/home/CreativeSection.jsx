@@ -8,103 +8,62 @@ import { UiSubheading } from "../common/typography/UiSubheading";
 
 const data = [
   {
-    firstTitle: "Website", secondTitle: "Design",
-    tags: ["E-commerce", "UI/UX", "Custom Design", "Responsive Design", "CMS Integration"],
-    url: "/services/website-design",
+    firstTitle: "Store Setup",
+    secondTitle: "& Design",
+    tags: ["eBay Store Setup", "Custom Store Design"],
+    url: "/services/ebay-store-setup",
     image: "/images/home/creative/creative1.png"
   },
   {
-    firstTitle: "Landing", secondTitle: "Pages",
-    tags: ["High Conversion", "Lead Generation", "A/B Testing", "Minimal UI", "Fast Loading"],
-    url: "/services/landing-pages",
-    image: "/images/home/creative/creative3.png"
-  },
-  {
-    firstTitle: "SEO", secondTitle: "Optimization",
-    tags: ["Keyword Research", "On-Page SEO", "Technical SEO", "Backlink Building", "Content Optimization"],
-    url: "/services/seo-optimization",
+    firstTitle: "Listings &",
+    secondTitle: "Product Management",
+    tags: ["Product Listing Optimization", "Product Photography", "Inventory Management"],
+    url: "/services/product-listing-optimization",
     image: "/images/home/creative/creative2.png"
   },
   {
-    firstTitle: "GMB", secondTitle: "Optimization",
-    tags: ["Google My Business", "Local Ranking", "Map SEO", "Business Profile", "Review Management"],
-    url: "/services/gmb-optimization",
+    firstTitle: "Sales",
+    secondTitle: "& Promotion",
+    tags: ["Promotions & Offers Management", "Seasonal Campaign Planning", "Email Marketing for eBay Customers"],
+    url: "/services/promotions-offers-management",
+    image: "/images/home/creative/creative3.png"
+  },
+  {
+    firstTitle: "Analytics",
+    secondTitle: "& Performance",
+    tags: ["Performance Analytics & Reporting", "Competitor Analysis"],
+    url: "/services/performance-analytics-reporting",
     image: "/images/home/creative/creative4.png"
   },
   {
-    firstTitle: "Local", secondTitle: "SEO",
-    tags: ["Geo-Targeting", "NAP Consistency", "Local Listings", "Customer Reviews", "Local Backlinks"],
-    url: "/services/local-seo",
+    firstTitle: "Policy, Compliance",
+    secondTitle: "& International",
+    tags: ["eBay Policy Compliance Assistance", "Cross-Border Selling Support", "Account Suspension Recovery"],
+    url: "/services/ebay-policy-compliance-assistance",
     image: "/images/home/creative/creative1.png"
   },
   {
-    firstTitle: "Email", secondTitle: "Design",
-    tags: ["Responsive Emails", "Newsletter Templates", "HTML Emails", "Transactional Emails", "Marketing Campaigns"],
-    url: "/services/email-design",
+    firstTitle: "Order & Customer",
+    secondTitle: "Operations",
+    tags: ["Order Management & Fulfillment", "Customer Support Management", "Return & Refund Management", "Feedback Management"],
+    url: "/services/order-management-fulfillment",
     image: "/images/home/creative/creative2.png"
   },
   {
-    firstTitle: "Marketing", secondTitle: "Strategy",
-    tags: ["Brand Awareness", "Customer Retention", "Market Research", "Competitor Analysis", "Growth Hacking"],
-    url: "/services/marketing-strategy",
+    firstTitle: "Advertising",
+    secondTitle: "& Marketing",
+    tags: ["eBay Ads Campaign Management", "eBay Dropshipping Assistance"],
+    url: "/services/ebay-ads-campaign-management",
+    image: "/images/home/creative/creative3.png"
+  },
+  {
+    firstTitle: "Website & Branding",
+    secondTitle: "(Add-on Services)",
+    tags: ["eCommerce Website Design", "Creative Assets for eBay"],
+    url: "/services/ecommerce-website-design",
     image: "/images/home/creative/creative4.png"
   },
-  {
-    firstTitle: "Email", secondTitle: "Campaign",
-    tags: ["Personalized Emails", "Automated Sequences", "Lead Nurturing", "Email Analytics", "A/B Testing"],
-    url: "/services/email-campaign",
-    image: "/images/home/creative/creative3.png"
-  },
-  {
-    firstTitle: "Google", secondTitle: "Ads",
-    tags: ["PPC", "Keyword Targeting", "Ad Copywriting", "Performance Tracking", "Conversion Optimization"],
-    url: "/services/google-ads",
-    image: "/images/home/creative/creative1.png"
-  },
-  {
-    firstTitle: "Meta", secondTitle: "Ads",
-    tags: ["Facebook Ads", "Instagram Ads", "Audience Targeting", "Video Ads", "Retargeting Campaigns"],
-    url: "/services/meta-ads",
-    image: "/images/home/creative/creative2.png"
-  },
-  {
-    firstTitle: "Influencer", secondTitle: "Marketing",
-    tags: ["Brand Collaborations", "Social Proof", "Sponsored Posts", "Influencer Outreach", "Engagement Growth"],
-    url: "/services/influencer-marketing",
-    image: "/images/home/creative/creative3.png"
-  },
-  {
-    firstTitle: "Blog", secondTitle: "Writing",
-    tags: ["SEO Blogs", "Long-Form Content", "Industry Research", "Engaging Storytelling", "Content Strategy"],
-    url: "/services/blog-writing",
-    image: "/images/home/creative/creative4.png"
-  },
-  {
-    firstTitle: "Ghost", secondTitle: "Writing",
-    tags: ["Personal Branding", "Book Writing", "Thought Leadership", "SEO Optimization", "Confidential Content"],
-    url: "/services/ghost-writing",
-    image: "/images/home/creative/creative2.png"
-  },
-  {
-    firstTitle: "Social Media", secondTitle: "Creatives",
-    tags: ["Social Posts", "Ad Creatives", "Engaging Graphics", "Brand Consistency", "Platform-Specific Design"],
-    url: "/services/social-media-creatives",
-    image: "/images/home/creative/creative3.png"
-  },
-  {
-    firstTitle: "Presentation", secondTitle: "Design",
-    tags: ["Business Pitches", "Infographics", "Slide Decks", "Storytelling", "Professional Templates"],
-    url: "/services/presentation-design",
-    image: "/images/home/creative/creative3.png"
-  },
-  {
-    firstTitle: "Brochure", secondTitle: "Design",
-    tags: ["Company Profiles", "Marketing Brochures", "Product Catalogs", "Print & Digital", "Attractive Layouts"],
-    url: "/services/brochure-design",
-    image: "/images/home/creative/creative3.png"
-  }
 ];
-
 
 const duplicatedData = [...data, ...data];
 

@@ -65,7 +65,7 @@ const ServicesSupportSection = () => {
         {/* Left Text Section */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <UiSubheading border={true} className="text-secondary-500 mb-2">
-            A variety of design services at your fingertips
+            Comprehensive eBay Business Solutions
           </UiSubheading>
           <Heading
             level="h2"
@@ -73,22 +73,17 @@ const ServicesSupportSection = () => {
             spacing="lg"
             className="text-left font-semibold"
           >
-            Get graphic design, print, motion, video{" "}
+            Expert eBay Management, Performance Analytics{" "}
             <AccentText size="lg" className={" "}>
-              and more
+              and More
             </AccentText>
           </Heading>
 
           <p className="text-lg text-secondary-500 mb-4">
-            Whether you need an out-of-this-world illustration, beautiful print
-            designs, or engaging digital marketing assets, aneeverse’s
-            world-class graphic designers from around the world will make it
-            happen.
+            Whether you need account suspension recovery, professional listing optimization, 
+            strategic promotion management, or comprehensive performance analytics, our team
+            of eBay specialists provides the solutions your business needs to succeed on the platform.
           </p>
-          {/* <p className="text-gray-500 mb-6">
-            See us as an extension of your team, freeing you to focus on your
-            most impactful and creative work.
-          </p> */}
 
           <Button
             href="/contact"
@@ -112,7 +107,7 @@ const ServicesSupportSection = () => {
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
-              title="Aneeverse Demo Video"
+              title="eBay Services Demo Video"
               onLoad={initializePlayer} // Initialize player when iframe loads
             ></iframe>
 

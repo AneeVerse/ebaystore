@@ -2,10 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FaDesktop, FaPager, FaSearch, FaMapMarkerAlt, FaLocationArrow } from "react-icons/fa";
-import { FaPenFancy, FaGhost, FaFileAlt, FaTags } from "react-icons/fa";
-import { FaChartPie, FaEnvelope, FaGoogle, FaFacebook, FaUserFriends } from "react-icons/fa";
-import { FaEnvelopeOpenText, FaSlideshare, FaPaintBrush, FaFilePdf } from "react-icons/fa";
+import { FaDesktop, FaPager, FaSearch, FaMapMarkerAlt, FaLocationArrow, FaStore, FaPaintBrush, FaBoxOpen, FaCamera, FaClipboardList, FaTags, FaGift, FaEnvelope, FaChartLine, FaChartBar, FaBalanceScale, FaGlobe, FaGavel, FaUndo, FaCommentDots, FaBullhorn, FaShippingFast, FaUserShield, FaHandshake, FaFileInvoiceDollar, FaChartPie, FaUsers, FaCogs, FaFileAlt, FaGlobeAmericas, FaSyncAlt, FaHeadset, FaTruck, FaFileSignature, FaAd, FaGlobeEurope, FaRegSmile, FaRegChartBar, FaRegEnvelope, FaRegFileAlt, FaRegListAlt, FaRegCheckCircle, FaRegTimesCircle, FaRegStar, FaRegThumbsUp, FaRegThumbsDown, FaRegEdit, FaRegImage, FaRegChartPie, FaRegChartLine, FaRegMoneyBillAlt, FaRegCreditCard, FaRegCalendarAlt, FaRegBell, FaRegClock, FaRegQuestionCircle, FaRegLightbulb, FaRegHeart, FaRegBookmark, FaRegPaperPlane, FaRegAddressBook, FaRegBuilding, FaRegUser, FaRegEnvelopeOpen, FaRegFilePdf, FaRegFileWord, FaRegFileExcel, FaRegFilePowerpoint, FaRegFileImage, FaRegFileVideo, FaRegFileAudio, FaRegFileArchive, FaRegFileCode, FaRegFileAlt as FaRegFileAlt2 } from "react-icons/fa";
 import Link from "next/link";
 import { FaArrowRight, FaChevronDown } from "react-icons/fa6";
 import Layout from "@/components/common/Layout";
@@ -16,49 +13,80 @@ const ServicesMegaMenu = ({color}) => {
 
   const menuCategories = [
     {
-      title: "Website Services",
-      url: "/services#website-services",
-      color: "bg-indigo-100 hover:bg-indigo-200 text-indigo-900", 
+      title: "Store Setup & Design",
+      url: "/services#store-setup-design",
+      color: "bg-indigo-100 hover:bg-indigo-200 text-indigo-900",
       items: [
-        { name: "Website Design", description: "Stunning websites built to engage.", icon: <FaDesktop />
-         },
-        { name: "Landing Pages", description: "High-converting pages for your campaigns.", icon: <FaPager /> },
-        { name: "SEO Optimization", description: "Boost your search rankings with expert SEO.", icon: <FaSearch /> },
-        { name: "GMB Optimization", description: "Dominate local searches with GMB excellence.", icon: <FaMapMarkerAlt /> },
-        { name: "Local SEO", description: "Reach your audience with targeted local SEO strategies.", icon: <FaLocationArrow /> },
-        { name: "Email Design", description: "Engaging email templates that convert.", icon: <FaEnvelopeOpenText /> },
+        { name: "eBay Store Setup", description: "Complete setup for your eBay store.", icon: <FaStore /> },
+        { name: "Custom Store Design", description: "Unique, branded store design.", icon: <FaPaintBrush /> },
       ],
     },
     {
-      title: "Marketing Services",
-      url: "/services#marketing-services",
-      color: "bg-amber-100 hover:bg-amber-200 text-amber-900", // Updated to warm amber
+      title: "Listings & Product Management",
+      url: "/services#listings-product-management",
+      color: "bg-amber-100 hover:bg-amber-200 text-amber-900",
       items: [
-        { name: "Marketing Strategy", description: "Grow your brand with expert consultants.", icon: <FaChartPie /> },
-        { name: "Email Campaign", description: "Personalized email campaigns that convert.", icon: <FaEnvelope /> },
-        { name: "Google Ads", description: "Targeted ads to maximize ROI.", icon: <FaGoogle /> },
-        { name: "Meta Ads", description: "Creative campaigns that get noticed.", icon: <FaFacebook /> },
-        { name: "Influencer Marketing", description: "Boost brand visibility with trusted influencers.", icon: <FaUserFriends /> },
+        { name: "Product Listing Optimization", description: "Optimized listings for better sales.", icon: <FaBoxOpen /> },
+        { name: "Product Photography", description: "Professional product images.", icon: <FaCamera /> },
+        { name: "Inventory Management", description: "Efficient stock and order tracking.", icon: <FaClipboardList /> },
       ],
     },
     {
-      title: "Content Writing",
-      url: "/services#content-writing",
-      color: "bg-emerald-100 hover:bg-emerald-200 text-emerald-900", // Updated to deep emerald
+      title: "Sales & Promotion",
+      url: "/services#sales-promotion",
+      color: "bg-green-100 hover:bg-green-200 text-green-900",
       items: [
-        { name: "Blog Writing", description: "SEO-friendly blogs tailored to your niche.", icon: <FaPenFancy /> },
-        { name: "Ghost Writing", description: "Captivating content under your brand's name.", icon: <FaGhost /> },
+        { name: "Promotions & Offers Management", description: "Run and manage eBay promotions.", icon: <FaTags /> },
+        { name: "Seasonal Campaign Planning", description: "Plan and execute seasonal sales.", icon: <FaGift /> },
+        { name: "Email Marketing for eBay Customers", description: "Targeted email campaigns.", icon: <FaEnvelope /> },
       ],
     },
- 
     {
-      title: "Creative Design Services",
-      url: "/services#creative-design-services",
-      color: "bg-violet-100 hover:bg-violet-200 text-violet-900", // Updated to sophisticated violet
+      title: "Analytics & Performance",
+      url: "/services#analytics-performance",
+      color: "bg-blue-100 hover:bg-blue-200 text-blue-900",
       items: [
-        { name: "Social Media Creatives", description: "Engaging assets for all platforms.", icon: <FaFacebook /> },
-        { name: "Presentation Design", description: "Pitch-perfect presentations for your business needs.", icon: <FaSlideshare /> },
-        { name: "Brochure Design", description: "Informative and visually stunning brochures.", icon: <FaFilePdf /> },
+        { name: "Performance Analytics & Reporting", description: "Track and analyze store performance.", icon: <FaChartLine /> },
+        { name: "Competitor Analysis", description: "Stay ahead with competitor insights.", icon: <FaChartBar /> },
+      ],
+    },
+    {
+      title: "Policy, Compliance & International",
+      url: "/services#policy-compliance-international",
+      color: "bg-yellow-100 hover:bg-yellow-200 text-yellow-900",
+      items: [
+        { name: "eBay Policy Compliance Assistance", description: "Stay compliant with eBay rules.", icon: <FaBalanceScale /> },
+        { name: "Cross-Border Selling Support", description: "Expand internationally with ease.", icon: <FaGlobe /> },
+        { name: "Account Suspension Recovery", description: "Help with account reinstatement.", icon: <FaGavel /> },
+      ],
+    },
+    {
+      title: "Order & Customer Operations",
+      url: "/services#order-customer-operations",
+      color: "bg-emerald-100 hover:bg-emerald-200 text-emerald-900",
+      items: [
+        { name: "Order Management & Fulfillment", description: "Seamless order processing.", icon: <FaBoxOpen /> },
+        { name: "Customer Support Management", description: "Excellent customer service.", icon: <FaHeadset /> },
+        { name: "Return & Refund Management", description: "Handle returns and refunds smoothly.", icon: <FaUndo /> },
+        { name: "Feedback Management", description: "Manage and improve feedback.", icon: <FaCommentDots /> },
+      ],
+    },
+    {
+      title: "Advertising & Marketing",
+      url: "/services#advertising-marketing",
+      color: "bg-violet-100 hover:bg-violet-200 text-violet-900",
+      items: [
+        { name: "eBay Ads Campaign Management", description: "Maximize reach with eBay ads.", icon: <FaBullhorn /> },
+        { name: "eBay Dropshipping Assistance", description: "Support for dropshipping business.", icon: <FaShippingFast /> },
+      ],
+    },
+    {
+      title: "Website & Branding (Add-on Services)",
+      url: "/services#website-branding",
+      color: "bg-pink-100 hover:bg-pink-200 text-pink-900",
+      items: [
+        { name: "eCommerce Website Design", description: "Custom eCommerce websites.", icon: <FaGlobeAmericas /> },
+        { name: "Creative Assets for eBay", description: "Banners, graphics, and more.", icon: <FaPaintBrush /> },
       ],
     },
   ];
@@ -92,41 +120,15 @@ const ServicesMegaMenu = ({color}) => {
         >
           <div className="bg-[#EBFAFE] shadow-lg border py-3 overflow-y-auto h-[calc(100vh-80px)] border-gray-200 ">
 <Layout>
-<div className="grid grid-cols-3 gap-6">
-  {menuCategories.slice(0, 2).map((category, index) => (
-    <div key={index}>
-      <Link onClick={()=>{setIsOpen(false)}} href={category.url} className={`text-lg font-bold group py-2 px-4 rounded-md inline-flex items-center gap-2 ${category.color}`}>
-        {category.title} <div className="relative"> <FiArrowUpRight className="  z-10 group-hover:translate-x-[80%] group-hover:translate-y-[-80%] group-hover:opacity-0 transition-all duration-300" /> <FiArrowUpRight className=" absolute inset-0 z-10 opacity-0 translate-x-[-80%] translate-y-[80%] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" /></div>
-      </Link>
-      <ul className="mt-4 space-y-2">
-        {category.items.map((item, idx) => (
-          <Link onClick={()=>{setIsOpen(false)}} href={`/services/${item.name.toLowerCase().replace(" ", "-")}`} key={idx} className="flex group px-3 py-2 border-b items-center justify-between gap-3">
-            <div className="flex items-center justify-between gap-3">
-              <div>
-                <h4 className="text-md font-medium text-gray-700 flex items-center">
-                  <span className="h-[5px] w-[5px] bg-secondary-500 inline-block transition-all duration-300 scale-0 group-hover:scale-100 rounded-full"></span>  
-                  <span className="ml-[-5px] group-hover:ml-[6px] transition-all duration-300">{item.name}</span>
-                </h4>
-                <p className="text-sm text-gray-500">{item.description}</p>
-              </div>
-            </div>
-            <div className="text-gray-700 text-lg self-center">{item.icon}</div>
-          </Link>
-        ))}
-      </ul>
-    </div>
-  ))}
-
-  {/* Content Writing & Creative Design ek hi column me */}
-  <div className="flex gap-12 flex-col">
-    {menuCategories.slice(2, 4).map((category, index) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {menuCategories.map((category, index) => (
       <div key={index}>
-       <Link onClick={()=>{setIsOpen(false)}} href={category.url} className={`text-lg font-bold group py-2 px-4 rounded-md inline-flex items-center gap-2 ${category.color}`}>
-        {category.title} <div className="relative"> <FiArrowUpRight className="  z-10 group-hover:translate-x-[80%] group-hover:translate-y-[-80%] group-hover:opacity-0 transition-all duration-300" /> <FiArrowUpRight className=" absolute inset-0 z-10 opacity-0 translate-x-[-80%] translate-y-[80%] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" /></div>
-      </Link>
+        <Link onClick={()=>{setIsOpen(false)}} href={category.url} className={`text-lg font-bold group py-2 px-4 rounded-md inline-flex items-center gap-2 ${category.color}`}>
+          {category.title} <div className="relative"> <FiArrowUpRight className="  z-10 group-hover:translate-x-[80%] group-hover:translate-y-[-80%] group-hover:opacity-0 transition-all duration-300" /> <FiArrowUpRight className=" absolute inset-0 z-10 opacity-0 translate-x-[-80%] translate-y-[80%] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" /></div>
+        </Link>
         <ul className="mt-4 space-y-2">
           {category.items.map((item, idx) => (
-            <Link onClick={()=>{setIsOpen(false)}} href={`/services/${item.name.toLowerCase().replaceAll(" ", "-")}`} key={idx} className="flex group px-3 py-2 border-b items-center justify-between gap-3">
+            <Link onClick={()=>{setIsOpen(false)}} href={`/services/${item.name.toLowerCase().replace(/\s+/g, "-")}`} key={idx} className="flex group px-3 py-2 border-b items-center justify-between gap-3">
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h4 className="text-md font-medium text-gray-700 flex items-center">
@@ -143,7 +145,6 @@ const ServicesMegaMenu = ({color}) => {
       </div>
     ))}
   </div>
-</div>
 </Layout>
 </div>
         </motion.div>

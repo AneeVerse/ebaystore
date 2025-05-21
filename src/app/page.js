@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <SlidingLogos />
+      {/* <SlidingLogos /> */}
       <CreativeSection />
       <TableComponent />
       <DynamicOurWorks />
       <TestimonialSlider />
       <FeaturesSection />
-      <BottomAboutSection />
+      {/* <BottomAboutSection /> */}
     </div>
   );
 }

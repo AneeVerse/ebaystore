@@ -12,51 +12,85 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { blogs } from "@/data/blogData";
 import { customerStories } from "@/data/customerStoriesData";
+import { FaStore, FaBoxOpen, FaCamera, FaClipboardList, FaGift, FaChartLine, FaChartBar, FaBalanceScale, FaGlobe, FaGavel, FaUndo, FaCommentDots, FaBullhorn, FaShippingFast, FaGlobeAmericas, FaHeadset } from "react-icons/fa";
 
 // Menu Categories Data
 const menuCategories = [
   {
-    title: "Website Services",
-    link: "/services#website-services",
-    color: "bg-blue-200 text-blue-900",
+    title: "Store Setup & Design",
+    link: "/services#store-setup-design",
+    color: "bg-indigo-100 text-indigo-900",
     items: [
-      { name: "Website Design", description: "Stunning websites built to engage.", icon: <FaDesktop />, link: "/services/website-design" },
-      { name: "Landing Pages", description: "High-converting pages for your campaigns.", icon: <FaPager />, link: "/services/landing-pages" },
-      { name: "SEO Optimization", description: "Boost your search rankings with expert SEO.", icon: <FaSearch />, link: "/services/seo-optimization" },
-      { name: "GMB Optimization", description: "Dominate local searches with GMB excellence.", icon: <FaMapMarkerAlt />, link: "/services/gmb-optimization" },
-      { name: "Local SEO", description: "Reach your audience with targeted local SEO strategies.", icon: <FaLocationArrow />, link: "/services/local-seo" },
-      { name: "Email Design", description: "Engaging email templates that convert.", icon: <FaEnvelopeOpenText />, link: "/services/email-design" },
+      { name: "eBay Store Setup", description: "Complete setup for your eBay store.", icon: <FaStore />, link: "/services/ebay-store-setup" },
+      { name: "Custom Store Design", description: "Unique, branded store design.", icon: <FaPaintBrush />, link: "/services/custom-store-design" },
     ],
   },
   {
-    title: "Marketing Services",
-    link: "/services#marketing-services",
-    color: "bg-yellow-200 text-blue-900",
+    title: "Listings & Product Management",
+    link: "/services#listings-product-management",
+    color: "bg-amber-100 text-amber-900",
     items: [
-      { name: "Marketing Strategy", description: "Grow your brand with expert consultants.", icon: <FaChartPie />, link: "/services/marketing-strategy" },
-      { name: "Email Campaign", description: "Personalized email campaigns that convert.", icon: <FaEnvelope />, link: "/services/email-campaign" },
-      { name: "Google Ads", description: "Targeted ads to maximize ROI.", icon: <FaGoogle />, link: "/services/google-ads" },
-      { name: "Meta Ads", description: "Creative campaigns that get noticed.", icon: <FaFacebook />, link: "/services/meta-ads" },
-      { name: "Influencer Marketing", description: "Boost brand visibility with trusted influencers.", icon: <FaUserFriends />, link: "/services/influencer-marketing" },
+      { name: "Product Listing Optimization", description: "Optimized listings for better sales.", icon: <FaBoxOpen />, link: "/services/product-listing-optimization" },
+      { name: "Product Photography", description: "Professional product images.", icon: <FaCamera />, link: "/services/product-photography" },
+      { name: "Inventory Management", description: "Efficient stock and order tracking.", icon: <FaClipboardList />, link: "/services/inventory-management" },
     ],
   },
   {
-    title: "Content Writing",
-    link: "/services#content-writing",
-    color: "bg-green-200 text-green-900",
+    title: "Sales & Promotion",
+    link: "/services#sales-promotion",
+    color: "bg-green-100 text-green-900",
     items: [
-      { name: "Blog Writing", description: "SEO-friendly blogs tailored to your niche.", icon: <FaPenFancy />, link: "/services/blog-writing" },
-      { name: "Ghost Writing", description: "Captivating content under your brand's name.", icon: <FaGhost />, link: "/services/ghost-writing" },
+      { name: "Promotions & Offers Management", description: "Run and manage eBay promotions.", icon: <FaTags />, link: "/services/promotions-offers-management" },
+      { name: "Seasonal Campaign Planning", description: "Plan and execute seasonal sales.", icon: <FaGift />, link: "/services/seasonal-campaign-planning" },
+      { name: "Email Marketing for eBay Customers", description: "Targeted email campaigns.", icon: <FaEnvelope />, link: "/services/email-marketing-ebay-customers" },
     ],
   },
   {
-    title: "Creative Design Services",
-    link: "/services#creative-design-services",
-    color: "bg-lime-200 text-lime-900",
+    title: "Analytics & Performance",
+    link: "/services#analytics-performance",
+    color: "bg-blue-100 text-blue-900",
     items: [
-      { name: "Social Media Creatives", description: "Engaging assets for all platforms.", icon: <FaFacebook />, link: "/services/social-media-creatives" },
-      { name: "Presentation Design", description: "Pitch-perfect presentations for your business needs.", icon: <FaSlideshare />, link: "/services/presentation-design" },
-      { name: "Brochure Design", description: "Informative and visually stunning brochures.", icon: <FaFilePdf />, link: "/services/brochure-design" },
+      { name: "Performance Analytics & Reporting", description: "Track and analyze store performance.", icon: <FaChartLine />, link: "/services/performance-analytics-reporting" },
+      { name: "Competitor Analysis", description: "Stay ahead with competitor insights.", icon: <FaChartBar />, link: "/services/competitor-analysis" },
+    ],
+  },
+  {
+    title: "Policy, Compliance & International",
+    link: "/services#policy-compliance-international",
+    color: "bg-yellow-100 text-yellow-900",
+    items: [
+      { name: "eBay Policy Compliance Assistance", description: "Stay compliant with eBay rules.", icon: <FaBalanceScale />, link: "/services/ebay-policy-compliance-assistance" },
+      { name: "Cross-Border Selling Support", description: "Expand internationally with ease.", icon: <FaGlobe />, link: "/services/cross-border-selling-support" },
+      { name: "Account Suspension Recovery", description: "Help with account reinstatement.", icon: <FaGavel />, link: "/services/account-suspension-recovery" },
+    ],
+  },
+  {
+    title: "Order & Customer Operations",
+    link: "/services#order-customer-operations",
+    color: "bg-emerald-100 text-emerald-900",
+    items: [
+      { name: "Order Management & Fulfillment", description: "Seamless order processing.", icon: <FaBoxOpen />, link: "/services/order-management-fulfillment" },
+      { name: "Customer Support Management", description: "Excellent customer service.", icon: <FaHeadset />, link: "/services/customer-support-management" },
+      { name: "Return & Refund Management", description: "Handle returns and refunds smoothly.", icon: <FaUndo />, link: "/services/return-refund-management" },
+      { name: "Feedback Management", description: "Manage and improve feedback.", icon: <FaCommentDots />, link: "/services/feedback-management" },
+    ],
+  },
+  {
+    title: "Advertising & Marketing",
+    link: "/services#advertising-marketing",
+    color: "bg-violet-100 text-violet-900",
+    items: [
+      { name: "eBay Ads Campaign Management", description: "Maximize reach with eBay ads.", icon: <FaBullhorn />, link: "/services/ebay-ads-campaign-management" },
+      { name: "eBay Dropshipping Assistance", description: "Support for dropshipping business.", icon: <FaShippingFast />, link: "/services/ebay-dropshipping-assistance" },
+    ],
+  },
+  {
+    title: "Website & Branding (Add-on Services)",
+    link: "/services#website-branding",
+    color: "bg-pink-100 text-pink-900",
+    items: [
+      { name: "eCommerce Website Design", description: "Custom eCommerce websites.", icon: <FaGlobeAmericas />, link: "/services/ecommerce-website-design" },
+      { name: "Creative Assets for eBay", description: "Banners, graphics, and more.", icon: <FaPaintBrush />, link: "/services/creative-assets-ebay" },
     ],
   },
 ];

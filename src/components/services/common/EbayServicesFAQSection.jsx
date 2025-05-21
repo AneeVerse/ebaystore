@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import Layout from "../common/Layout";
+import Layout from "../../common/Layout";
 
-const faqs = [
+const defaultFaqs = [
   { question: "What eBay services do you offer?", answer: "We offer a comprehensive range of eBay services including account suspension recovery, listing optimization, performance analytics, promotions management, returns handling, seasonal campaign planning, and more." },
   { question: "How can you help with my suspended eBay account?", answer: "Our team specializes in analyzing suspension causes, developing effective appeals, and guiding you through the reinstatement process with a high success rate of account recovery." },
   { question: "What is included in your performance analytics service?", answer: "Our performance analytics service includes sales analysis, conversion rate optimization, traffic analysis, competitive benchmarking, and custom performance dashboards with actionable insights." },
@@ -14,8 +14,11 @@ const faqs = [
   { question: "What pricing options do you have for eBay services?", answer: "We offer flexible pricing options including project-based rates, monthly management packages, and ongoing support plans to fit businesses of all sizes." },
 ];
 
-export default function FAQSection() {
+export default function EbayServicesFAQSection({ customFaqs = [] }) {
   const [activeIndex, setActiveIndex] = useState(null);
+  
+  // Use custom FAQs if provided, otherwise use default ones
+  const faqs = customFaqs.length > 0 ? customFaqs : defaultFaqs;
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -108,4 +111,4 @@ export default function FAQSection() {
       </Layout>
     </div>
   );
-}
+} 
