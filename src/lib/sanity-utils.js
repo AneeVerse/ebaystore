@@ -219,7 +219,7 @@ function imageBlockToHtml(block) {
   const [, id, dimensions, format] = ref.split('-');
   
   // Get Sanity project ID and dataset from environment (fallback to values if not available at build time)
-  const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'be9i5ty1';
+  const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'leph7aip';
   const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
   
   // Build image URL
@@ -271,7 +271,7 @@ function youtubeBlockToHtml(block) {
     const [, id, dimensions, format] = ref.split('-');
     
     // Get Sanity project ID and dataset from environment
-    const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'be9i5ty1';
+    const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'leph7aip';
     const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
     
     // Build image URL
