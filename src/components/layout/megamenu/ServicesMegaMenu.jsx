@@ -51,7 +51,7 @@ const ServicesMegaMenu = ({color}) => {
       ],
     },
     {
-      title: "Policy, Compliance & International",
+      title: "Global Policy & Compliance",
       url: "/services#policy-compliance-international",
       color: "bg-yellow-100 hover:bg-yellow-200 text-yellow-900",
       items: [
@@ -81,7 +81,7 @@ const ServicesMegaMenu = ({color}) => {
       ],
     },
     {
-      title: "Website & Branding (Add-on Services)",
+      title: "Website & Branding",
       url: "/services#website-branding",
       color: "bg-pink-100 hover:bg-pink-200 text-pink-900",
       items: [
@@ -120,10 +120,10 @@ const ServicesMegaMenu = ({color}) => {
         >
           <div className="bg-[#EBFAFE] shadow-lg border py-3 overflow-y-auto h-[calc(100vh-80px)] border-gray-200 ">
 <Layout>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
     {menuCategories.map((category, index) => (
-      <div key={index}>
-        <Link onClick={()=>{setIsOpen(false)}} href={category.url} className={`text-lg font-bold group py-2 px-4 rounded-md inline-flex items-center gap-2 ${category.color}`}>
+      <div key={index} className="flex flex-col h-full min-h-[220px]">
+        <Link onClick={()=>{setIsOpen(false)}} href={category.url} className={`text-lg font-bold group py-2 px-4 rounded-md inline-flex items-center gap-2 ${category.color} h-12 whitespace-nowrap overflow-hidden text-ellipsis`}>
           {category.title} <div className="relative"> <FiArrowUpRight className="  z-10 group-hover:translate-x-[80%] group-hover:translate-y-[-80%] group-hover:opacity-0 transition-all duration-300" /> <FiArrowUpRight className=" absolute inset-0 z-10 opacity-0 translate-x-[-80%] translate-y-[80%] group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" /></div>
         </Link>
         <ul className="mt-4 space-y-2">
