@@ -173,22 +173,25 @@ const HeroSection = () => {
                 spacing="lg"
                 className="text-center sm:text-left font-semibold"
               >
-                DESIGN, OPTIMIZE, ADVERTISE{" "}
-                <AccentText size="xl" className={" block text-orange-500  "}>
-                we got you covered.
+                DESIGN. OPTIMIZE. ADVERTISE.
+                <AccentText size="lg" className={" block text-orange-500 text-base "}>
+                We've got your eBay store covered.
                 </AccentText>
               </Heading>
-              <p className="text-sm text-center sm:text-left sm:text-[16px] mb-6 sm:mb-6">
-                Get access to high-velocity creative team that works with your
-                brand. Ship campaigns — faster, more reliably, and at scale.
+              <p className="text-sm text-center sm:text-left sm:text-[16px] mb-2 sm:mb-2">
+                Get a skilled creative team to build a strong brand, improve your listings, and create eye-catching ads that help you sell more
+              </p>
+              <p className="text-base text-center sm:text-left text-[#EBFAFE] font-semibold mb-6 sm:mb-6">
+                Make your eBay store unforgettable. Sell more. Scale faster. 🚀
               </p>
             </div>
             {/* Features */}
             <ul className="hidden sm:flex flex-col gap-2 text-sm sm:text-[16px] sm:gap-2 mb-5 sm:mb-8">
               {[
-                "Dependable Services",
-                "Proven Results",
-                "100% Better results",
+                "Custom eBay Storefront Design",
+                "High-Impact Listing Creatives",
+                "Scroll-Stopping Ad Campaign Graphics",
+                "Brand-Consistent Templates",
               ].map((feature, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <FaCheckCircle className="text-[#EBFAFE]" />
