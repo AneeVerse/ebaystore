@@ -1,11 +1,11 @@
 import { createClient } from 'next-sanity';
 
 export const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'be9i5ty1',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'leph7ai',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   apiVersion: '2023-05-03', // Use the latest API version
   useCdn: process.env.NODE_ENV === 'production',
-  token: process.env.SANITY_API_TOKEN,
+  token: process.env.SANITY_API_TOKEN, 
 });
 
 // Helper function to generate image URL from Sanity image
@@ -19,7 +19,7 @@ export const urlFor = (source) => {
   if (source?.asset?._ref) {
     // This is a basic implementation without the image-url package
     // You can enhance this later with proper image URL generation
-    return `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'be9i5ty1'}/${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}/${source.asset._ref
+    return `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'leph7ai'}/${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}/${source.asset._ref
       .replace('image-', '')
       .replace('-jpg', '.jpg')
       .replace('-png', '.png')
