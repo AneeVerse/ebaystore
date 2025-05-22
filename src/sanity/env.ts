@@ -3,7 +3,7 @@ export const apiVersion =
 
 export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'
 
-export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'be9i5ty1'
+export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'leph7ai'
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
